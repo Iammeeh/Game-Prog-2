@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     public TextMeshProUGUI scoreText;
     public int playerScore = 0;
-
+    private int playerHealth;
     private void Awake()
     {
         //THIS ASKS: Does this instance already exists. and is NOT this specific script?

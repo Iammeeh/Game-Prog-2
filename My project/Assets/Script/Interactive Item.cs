@@ -14,12 +14,12 @@ public class InteractiveItem : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter (Collision collision)
     {
         if (collision.gameObject.name == "Floor")
         {
             Debug.Log("Cube Hits the Floor");
         }
-        GameManager.Instance.AddScore(5);
+        GameManager.Instance.AddScore(-25);
     }
 }
