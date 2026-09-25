@@ -63,4 +63,14 @@ public class OrbitalTarget : MonoBehaviour
         }
         GameManager.Instance.DeductScore(25);
     }*/
+
+    private void OnEnable()
+    {
+        Debug.Log("Drone Spawned");
+    }
+
+    private void OnDisable()
+    {
+        Debug.Log("Drone Destroyed");
+    }
 }

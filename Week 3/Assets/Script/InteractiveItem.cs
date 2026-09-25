@@ -19,7 +19,6 @@ public class InteractiveItem : MonoBehaviour
     private void OnMouseDown()
     {
         currentClicks++;
-        Debug.Log("Add 25 Points");
         GameManager.Instance.AddScore(25);
         if (currentClicks == maxClicks)
         {
