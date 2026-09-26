@@ -14,6 +14,15 @@ public class InteractiveItem : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "HazardZone")
+        {
+            Debug.Log("HAZARD!");
+        }
+        GameManager.Instance.DeductScore(25);
+    }
+
     public int maxClicks = 10;
     public int currentClicks = 0;
     private void OnMouseDown()
@@ -24,14 +33,5 @@ public class InteractiveItem : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == "HazardZone")
-        {
-            Debug.Log("HAZARD!");
-        }
-        GameManager.Instance.DeductScore(25);
     }
 }

@@ -759,8 +759,8 @@ GameObject:
   - component: {fileID: 1120615249}
   - component: {fileID: 1120615248}
   - component: {fileID: 1120615247}
-  - component: {fileID: 1120615252}
   - component: {fileID: 1120615253}
+  - component: {fileID: 1120615254}
   m_Layer: 0
   m_Name: Sphere 3
   m_TagString: Untagged
@@ -877,20 +877,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1120615252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120615246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23736b2cba354c14994e58a180069796, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractiveItem
-  maxClicks: 10
-  currentClicks: 0
 --- !u!54 &1120615253
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -918,6 +904,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1120615254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120615246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23736b2cba354c14994e58a180069796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveItem
+  maxClicks: 10
+  currentClicks: 0
 --- !u!1 &1121388939
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,8 +993,8 @@ GameObject:
   - component: {fileID: 1280121624}
   - component: {fileID: 1280121623}
   - component: {fileID: 1280121622}
-  - component: {fileID: 1280121627}
   - component: {fileID: 1280121628}
+  - component: {fileID: 1280121629}
   m_Layer: 0
   m_Name: Sphere 2
   m_TagString: Untagged
@@ -1111,20 +1111,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1280121627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1280121621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23736b2cba354c14994e58a180069796, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractiveItem
-  maxClicks: 10
-  currentClicks: 0
 --- !u!54 &1280121628
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1152,6 +1138,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1280121629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280121621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23736b2cba354c14994e58a180069796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveItem
+  maxClicks: 10
+  currentClicks: 0
 --- !u!1 &1290918459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,8 +1165,8 @@ GameObject:
   - component: {fileID: 1290918462}
   - component: {fileID: 1290918461}
   - component: {fileID: 1290918460}
-  - component: {fileID: 1290918465}
   - component: {fileID: 1290918466}
+  - component: {fileID: 1290918467}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1283,20 +1283,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1290918465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290918459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23736b2cba354c14994e58a180069796, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractiveItem
-  maxClicks: 10
-  currentClicks: 0
 --- !u!54 &1290918466
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1324,6 +1310,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1290918467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290918459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23736b2cba354c14994e58a180069796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveItem
+  maxClicks: 10
+  currentClicks: 0
 --- !u!1 &1430252098
 GameObject:
   m_ObjectHideFlags: 0
