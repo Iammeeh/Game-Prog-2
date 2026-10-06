@@ -27,6 +27,11 @@ public abstract class Actor : MonoBehaviour
     {
         currentHealth -= damageAmount;
         Debug.Log($"{gameObject.name} took {damageAmount}");
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
     protected virtual void Die()
     {
