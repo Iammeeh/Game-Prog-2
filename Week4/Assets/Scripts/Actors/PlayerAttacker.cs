@@ -1,17 +1,14 @@
 using UnityEngine;
-
 public class PlayerAttacker : MonoBehaviour
 {
-    public float attackPower = 25;
-
-    // Update is called once per frame
+    [SerializeField] private float attackPower = 25f;
     private void Update()
     {
-    //0 = LMB
-    //1 = RMB
-    //2 = MMB
-    //If clicked on enemies they will get damaged
-    //Left Click triggers Raycast attack from camera
+        //0 = LMB
+        //1 = RMB
+        //2 = MMB
+        //If clicked on enemies they will get damaged
+        //Left Click triggers Raycast attack from camera
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -22,7 +19,6 @@ public class PlayerAttacker : MonoBehaviour
                 if (targetActor != null)
                 {
                     Debug.Log($"Succesfully attack an Actor) {targetActor.name}");
-
                     //Polymorphism in action: Unity automatically calls the child override
                     targetActor.TakeDamage(attackPower);
                     targetActor.PerformAttack();
