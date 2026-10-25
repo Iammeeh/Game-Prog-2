@@ -156,3 +156,4 @@ MonoBehaviour:
   target: {fileID: 0}
   maxHealth: 10
   moveSpeed: 3
+  colorRenderer: {fileID: 6667206180287088463}

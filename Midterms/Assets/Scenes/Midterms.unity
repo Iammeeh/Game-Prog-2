@@ -940,7 +940,7 @@ GameObject:
   - component: {fileID: 1937524892}
   m_Layer: 0
   m_Name: Turret
-  m_TagString: Untagged
+  m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1059,8 +1059,8 @@ MonoBehaviour:
   IsSemiAutomatic: 0
   ShootDelay: 0.5
   targetTag: Enemy
-  rotationSpeed: 100
-  detectionRadius: 50
+  rotationSpeed: 200
+  detectionRadius: 100
 --- !u!1001 &1949592909
 PrefabInstance:
   m_ObjectHideFlags: 0

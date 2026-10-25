@@ -2,26 +2,6 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-    /*    public float speed = 5f;
-        public Rigidbody rb;
-
-        void Start()
-        {
-            rb.AddForce(transform.forward * 2000);
-
-        }
-        private void Update()
-        {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        }
-
-        private void OnCollisionEnter(Collision collision)
-        {
-            if (collision.gameObject.name == "Cylinder")
-            {
-                Destroy(this.gameObject);
-            }
-        }*/
     private void Start()
     {
         Invoke(nameof(Impact), 2);
@@ -33,18 +13,46 @@ public class BulletScript : MonoBehaviour
 
         if (other.TryGetComponent(out GreenEnemy greenTarget))
         {
-            greenTarget.TakeDamage(20);
+            greenTarget.Damage(20);
         }
         else if (other.TryGetComponent(out BlueEnemy blueTarget))
         {
-            blueTarget.TakeDamage(20);
+            blueTarget.Damage(20);
         }
         else if (other.TryGetComponent(out PinkEnemy pinkTarget))
         {
-            pinkTarget.TakeDamage(20);
+            pinkTarget.Damage(20);
         }
         Impact();
+        /*        // Try to get the IDamageable interface from the hit object
+                IDamageable damageable = other.GetComponent<IDamageable>();
+
+                if (damageable != null)
+                {
+                    // Pass the bullet's material type to the interface method
+                    damageable.TakeDamage(bulletMaterial);
+                }
+
+                // Both requirements (5 & 6) specify that the bullet is always destroyed
+                Impact();*/
     }
+/*    [SerializeField] private colorType bulletMaterial;*/
+
+/*    private void OnTriggerEnter(Collider other)
+    {
+        // Try to get the IDamageable interface from the hit object
+        IDamageable damageable = other.GetComponent<IDamageable>();
+
+        if (damageable != null)
+        {
+            // Pass the bullet's material type to the interface method
+            damageable.TakeDamage(bulletMaterial);
+        }
+
+        // Both requirements (5 & 6) specify that the bullet is always destroyed
+        Impact();
+    }*/
+
 
     private void Impact()
     {
