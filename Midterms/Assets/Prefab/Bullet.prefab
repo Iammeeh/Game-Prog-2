@@ -105,7 +105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 878102da873e6ef47bd08322b6df760d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
-  bulletMaterial: 2
 --- !u!65 &2191433193373201727
 BoxCollider:
   m_ObjectHideFlags: 0

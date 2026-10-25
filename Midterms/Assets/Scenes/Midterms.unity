@@ -468,6 +468,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 8.28
       objectReference: {fileID: 0}
+    - target: {fileID: 1960325637751259766, guid: a0b493453ec96204c912c08a29362b81, type: 3}
+      propertyPath: enemyMaterial
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2717538822215443310, guid: a0b493453ec96204c912c08a29362b81, type: 3}
       propertyPath: m_Name
       value: SpherePink
@@ -1124,6 +1128,10 @@ PrefabInstance:
     - target: {fileID: 3461220749878595839, guid: 3682319691cc9254f934b312307660b4, type: 3}
       propertyPath: moveSpeed
       value: 3.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3461220749878595839, guid: 3682319691cc9254f934b312307660b4, type: 3}
+      propertyPath: enemyMaterial
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
