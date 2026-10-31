@@ -24,11 +24,11 @@ public class EnemyTracker : MonoBehaviour
         if (activeEnemies.Remove(enemyName))
         {
             /*Debug.Log("Cast away thy mortal possessions");*/
-            Debug.Log($"Remove {enemyName} from thy pockets");
+            Debug.Log($"Send {enemyName} to the shadow realm");
         }
         else
         {
-            Debug.LogWarning("I could not find what earthly article you are searching for");
+            Debug.LogWarning("Wherefore art thou the opps");
         }
         UpdateUI();
     }
